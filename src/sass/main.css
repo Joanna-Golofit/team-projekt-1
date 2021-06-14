@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
+/* <!-- HEADER --> */
+.header__navigation,
+.header__btn {
+  display: none;
+}
+
+.header__btn-hamburger {
+  background-color: transparent;
+  border: none;
+}
+
+.header__logo-icon {
+  width: 80px;
+  height: 29px;
+}
+
+/* <!-- END HEADER --> */
+/*# sourceMappingURL=main.css.map */
