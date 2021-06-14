@@ -3,6 +3,73 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p {
+  padding: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+img {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  /* background-color: red; */
+}
+
+.header__container {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    margin: auto;
+  }
+}
+
 /* <!-- HEADER --> */
 .header__navigation,
 .header__btn {
