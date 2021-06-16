@@ -1,0 +1,27 @@
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .learning__container {
+    height: 340px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .difficulties__container {
+    max-width: calc(100% - 80px);
+    bottom: 0;
+    transform: translate(0%, 50%);
+    height: 303px;
+  }
+
+  .difficulties__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .difficulties__item {
+    flex-basis: calc(100% / 2);
+  }
+
+  .difficulties__descripton {
+    padding-right: 40px;
+  }
+}
