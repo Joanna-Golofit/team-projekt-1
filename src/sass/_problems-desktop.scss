@@ -1,0 +1,49 @@
+
+@media screen and (min-width: 1280px) {
+  .learning__container {
+    height: 548px;
+    padding-left: 184px;
+    padding-right: 184px;
+  }
+  .difficulties__container {
+    bottom: 0;
+    transform: translate(0%, 50%);
+    max-width: calc(100% - 368px);
+    height: 354px;
+  }
+  .learning__title {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    margin-top: 114px;
+  }
+
+  .difficulties__list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    padding-left: 114px;
+    padding-top: 68px;
+  }
+
+  .difficulties__item {
+    flex-basis: calc(100% / 3);
+  }
+
+  .difficulties__descripton {
+    padding-right: 40px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .difficulties__ordinal-number {
+    font-size: 20px;
+    line-height: 164.9%;
+  }
+
+  .campfire-svg {
+    display: initial;
+  }
+}
