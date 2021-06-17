@@ -243,4 +243,151 @@ img {
 }
 
 /* <!--   END mobile-menu -->   */
+@media screen and (min-width: 1280px) {
+  .learning__container {
+    height: 548px;
+    padding-left: 184px;
+    padding-right: 184px;
+  }
+  .difficulties__container {
+    bottom: 0;
+    -webkit-transform: translate(0%, 50%);
+            transform: translate(0%, 50%);
+    max-width: calc(100% - 368px);
+    height: 354px;
+  }
+  .learning__title {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    margin-top: 114px;
+  }
+  .difficulties__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    padding-left: 114px;
+    padding-top: 68px;
+  }
+  .difficulties__item {
+    -ms-flex-preferred-size: calc(100% / 3);
+        flex-basis: calc(100% / 3);
+  }
+  .difficulties__descripton {
+    padding-right: 40px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .difficulties__ordinal-number {
+    font-size: 20px;
+    line-height: 164.9%;
+  }
+  .campfire-svg {
+    display: initial;
+  }
+}
+
+.learning__container {
+  background-color: #111518;
+  height: 694px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 27px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  position: relative;
+}
+
+.learning__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.learning__image {
+  display: none;
+}
+
+.learning__title-decoration {
+  color: #ff6b09;
+}
+
+.difficulties__container {
+  max-width: calc(100% - 40px);
+  position: absolute;
+  background-color: #ffffff;
+  margin-top: 39px;
+  -webkit-box-shadow: -5px 8px 26px 0px #0000000a;
+          box-shadow: -5px 8px 26px 0px #0000000a;
+}
+
+.difficulties__list {
+  list-style: none;
+  padding-left: 30px;
+  padding-right: 35px;
+  padding-top: 20px;
+  color: #111518;
+}
+
+.difficulties__ordinal-number {
+  color: #ff6b09;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+
+.difficulties__descripton {
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+  color: #111518;
+}
+
+.campfire-svg {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .learning__container {
+    height: 340px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .difficulties__container {
+    max-width: calc(100% - 80px);
+    bottom: 0;
+    -webkit-transform: translate(0%, 50%);
+            transform: translate(0%, 50%);
+    height: 303px;
+  }
+  .difficulties__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .difficulties__item {
+    -ms-flex-preferred-size: calc(100% / 2);
+        flex-basis: calc(100% / 2);
+  }
+  .difficulties__descripton {
+    padding-right: 40px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
