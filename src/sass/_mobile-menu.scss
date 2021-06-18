@@ -6,8 +6,8 @@
 }
 .backdrop {
   padding-top: 30px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
   position: absolute;
   background-color: rgba(17, 21, 24, 0.9);
   width: 100%;
@@ -31,24 +31,41 @@
   right: 20px;
 }
 .menu-open__link {
-font-family: Montserrat;
-font-style: normal;
-font-weight: 800;
-font-size: 20px;
-line-height: 180%;
-/* or 36px */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 180%;
+  /* or 36px */
 
-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
 
 .menu-open__navigation {
-  margin-top: 50px;margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.current {
-  color: #FF6B09;
+.link--current {
+  color: #ff6b09;
 }
 
+@media screen and (min-width: 768px) {
+  .backdrop {
+    padding-top: 41px;
+  }
+  .menu-open__logo-icon {
+    width: 128px;
+    height: 45px;
+  }
+  .menu-open__btn {
+    display: none;
+  }
+  .menu-open__navigation {
+    display: flex;
+    justify-content: center;
+  }
+}
 /* <!--   END mobile-menu -->   */
