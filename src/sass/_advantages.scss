@@ -2,7 +2,22 @@
 .advantages__header {
   display: none;
 }
-.advantages__description::before {
+// .advantages__description::before {
+//   display: block;
+//   content: '';
+//   width: 59px;
+//   height: 60px;
+
+//   background-image: url(../images/advantages-1.svg);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: contain;
+
+//   position: relative;
+//   top: 65px;
+//   left: -70px;
+// }
+.advantages__item::before {
   display: block;
   content: '';
   width: 59px;
@@ -26,11 +41,15 @@
   // margin-left: auto;
   margin-left: -10px;
   margin-right: -10px;
+  justify-content: center;
+  align-items: center;
 }
 .advantages__item {
   margin-left: 10px;
   margin-right: 10px;
   flex-basis: calc(100% / 3 - 10px);
+
+  padding-left: 68px;
 }
 .advantages__description {
   // /* margin-left: 60px; */
