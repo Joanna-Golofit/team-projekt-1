@@ -52,6 +52,7 @@
 @media screen and (min-width: 768px) {
   .backdrop {
     padding-top: 41px;
+    padding-left: 40px;
   }
   .menu-open__logo-icon {
     width: 128px;
@@ -63,6 +64,10 @@
   .menu-open__navigation {
     display: flex;
     justify-content: center;
+  }
+  .menu-open__btn-close {
+    right: 40px;
+    top: 52px;
   }
 }
 /* <!--   END mobile-menu -->   */
