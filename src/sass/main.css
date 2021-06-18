@@ -243,6 +243,8 @@ img {
   margin-top: 52px;
   margin-bottom: 55px;
   display: block;
+  text-align: center;
+  padding-top: 15px;
   margin-right: auto;
   margin-left: auto;
 }
