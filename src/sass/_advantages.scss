@@ -14,12 +14,6 @@
   top: 65px;
   left: -70px;
 }
-
-/* .advantages__item {
-  position: relative;
-  display: block;
-  margin-left: 80px;
-} */
 .advantages__list {
   display: flex;
   flex-direction: column;
@@ -28,7 +22,7 @@
   margin-left: auto;
 }
 .advantages__description {
-  /* margin-left: 60px; */
+  // /* margin-left: 60px; */
   width: 90px;
 
   font-family: Montserrat;
@@ -36,10 +30,7 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 164.9%;
-  /* or 23px */
-
   letter-spacing: 0.08em;
-
   color: #111518;
 }
 

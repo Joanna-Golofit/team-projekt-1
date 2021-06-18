@@ -2,32 +2,24 @@
 .hero__section {
   padding-bottom: 47.5px;
   background-image: url('../images/hero-wave-desktop.jpg');
-  /* contain nie daje takiego cienia */
+  // /* contain nie daje takiego cienia */
   background-size: contain;
-  /* background-size: auto; */
-  /* cover jakos lepiej z cieniem wyglada */
-  /* background-size: cover; */
-  /* background-size: 480px; */
+  // /* background-size: auto; */
+  // /* cover jakos lepiej z cieniem wyglada */
+  // /* background-size: cover; */
+  // /* background-size: 480px; */
   background-position: bottom;
   background-repeat: no-repeat;
   background-color: E5E5E5;
-  /* background-color: red; */
 }
-
-/* .advantages__section {
-   background-color: #E5E5E5; 
-} */
-
 .hero__header {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 130%;
-  /* or 26px */
   letter-spacing: 0.03em;
-  color: #111518;
-  
+  color: #111518;  
   margin-bottom: 8px;
 }
 .hero__text-top {
@@ -36,12 +28,9 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
-  /* or 157% */
-
   display: flex;
   align-items: center;
   letter-spacing: 0.08em;
-
   color: #b9b9b9;
 }
 .hero__text-bottom {
@@ -50,12 +39,8 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 22px;
-  /* or 157% */
   display: block;
-  /* display: flex; */
-  /* align-items: center; */
   letter-spacing: 0.08em;
-
   color: #111518;
 }
 .accent {
@@ -66,14 +51,9 @@
   width: 260px;
   height: 48px;
   font-family: Montserrat;
-  font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  /* align-items: center; */
-  /* display: flex; */
-  /* justify-items: center; */
-  /* text-align: center; */
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -102,17 +82,10 @@
   height: 178px;
   margin-left: auto;
   margin-right: auto;
-  /* margin-bottom: 47.5px; */
-  /* background-color: red; */
-  /* background-image: url('../images/hero-mobile.png'); */
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
+
 }
 
 @media screen and (min-width: 768px) {
-  /* .hero__section {
-    display: flex;
-  } */
   .hero__wrapper {
     flex-basis: calc(100% / 2);
   } 
@@ -120,9 +93,7 @@
   .hero__img-wrapper {
     flex-basis: calc(100% / 2);
     overflow: visible;
-    /* width: 376px;
-    height: 321px; */
-    /* background-image: url('../images/hero-tablet.png'); */
+
   }
   .hero__img {
     width: 376px;
@@ -161,10 +132,6 @@
   .hero__btn {
     margin-left: 0;
   }
-  .hero__section {
-  /* background-image: url('../images/hero-wave-desktop.jpg'); */
-  /* contain nie daje takiego cienia */
-  background-size: cover;
-  }
+ 
 }
 /* <!--  END HERO  --> */
