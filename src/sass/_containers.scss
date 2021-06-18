@@ -10,19 +10,36 @@
   justify-content: space-between;
 }
 
+.advantages__container {
+  display: flex;
+}
+
+.hero__container {
+  padding-top: 50px;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     margin: auto;
   }
-
 }
 @media screen and (min-width: 768px) {
   .container {
-    margin: auto;
+    padding: 0 40px;
+  }
+  .header__container {
+    padding-top: 30px;
+  }
+  .hero__container {
+    display: flex;
+    padding-top: 90px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .container {
-    margin: auto;
+  .hero__container {
+    display: flex;
+    padding-top: 113px;
+    /* a zdjecie przesunac w gore i prawo*/
   }
+  
 }
