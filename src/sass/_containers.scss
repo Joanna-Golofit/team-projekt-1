@@ -34,6 +34,9 @@
     display: flex;
     padding-top: 90px;
   }
+  .advantages__container {
+   padding-bottom: 50px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .hero__container {
@@ -42,5 +45,5 @@
   }  
   .advantages__container {
   padding-bottom: 130px;
-}
+  }
 }

@@ -10,7 +10,7 @@
   // /* background-size: 480px; */
   background-position: bottom;
   background-repeat: no-repeat;
-  background-color: E5E5E5;
+  // background-color: E5E5E5;
 }
 .hero__header {
   font-family: Montserrat;
@@ -86,6 +86,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero__section {
+  padding-bottom: 0;
+  }
   .hero__wrapper {
     flex-basis: calc(100% / 2);
   } 
