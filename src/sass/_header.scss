@@ -3,13 +3,67 @@
 .header__btn {
   display: none;
 }
+
 .header__btn-hamburger {
- background-color: transparent;
- border: none;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 38.5px;
+  right: 20px;
+  /* right: 0px; */
 }
 .header__logo-icon {
   width: 80px;
   height: 29px;
 }
+
+@media screen and (min-width: 768px) {
+  .header__btn {
+    display: block;
+    margin-right: 101px;
+  }
+  .header__logo-icon {
+    width: 128px;
+    height: 45px;
+  }
+  .header__btn-hamburger {
+    top: 43px;
+    right: 33px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header__btn-hamburger {
+    display: none;
+  }
+  .header__btn {
+    display: block;
+    margin-right: 0;
+  }
+  .header__navigation {
+    display: block;
+  }
+  .header__list {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 144px;
+    /* align-items: center; */
+    /* text-align: center; */
+
+  }
+  .header__link {
+    text-transform: uppercase;
+    color: #B9B9B9;
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+  }
+  .header__item {
+  margin-right: 40px;
+  }
+}
+
 
 /* <!-- END HEADER --> */
