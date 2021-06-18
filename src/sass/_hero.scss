@@ -1,7 +1,8 @@
 /* <!--  HERO  --> */
 .hero__section {
   padding-bottom: 47.5px;
-  background-image: url('../images/hero-wave-desktop.jpg');
+  // background-image: url('../images/hero-wave-desktop.jpg');
+  background-image: url('../images/hero-wave-desktop-png.png');
   // /* contain nie daje takiego cienia */
   background-size: contain;
   // /* background-size: auto; */
@@ -16,7 +17,8 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero__section {
-    background-image: url('../images/hero-wave-desktop@2x.jpg');
+    // background-image: url('../images/hero-wave-desktop@2x.jpg');
+    background-image: url('../images/hero-wave-desktop-png@2x.png');
   }
 }
 .hero__header {
