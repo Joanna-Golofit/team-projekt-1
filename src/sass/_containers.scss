@@ -11,6 +11,7 @@
 
 .advantages__container {
   display: flex;
+  padding-bottom: 50px;
 }
 
 .hero__container {
@@ -27,7 +28,7 @@
     padding: 0 40px;
   }
   .header__container {
-    padding-top: 30px;
+    padding-top: 40px;
   }
   .hero__container {
     display: flex;
@@ -39,4 +40,7 @@
     display: flex;
     padding-top: 113px;
   }  
+  .advantages__container {
+  padding-bottom: 130px;
+}
 }

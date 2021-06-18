@@ -55,6 +55,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 50px;
 }
 
 .hero__container {
@@ -72,7 +73,7 @@ img {
     padding: 0 40px;
   }
   .header__container {
-    padding-top: 30px;
+    padding-top: 40px;
   }
   .hero__container {
     display: -webkit-box;
@@ -88,6 +89,9 @@ img {
     display: -ms-flexbox;
     display: flex;
     padding-top: 113px;
+  }
+  .advantages__container {
+    padding-bottom: 130px;
   }
 }
 
@@ -113,15 +117,15 @@ img {
 @media screen and (min-width: 768px) {
   .header__btn {
     display: block;
-    margin-right: 101px;
+    margin-right: 71px;
   }
   .header__logo-icon {
     width: 128px;
     height: 45px;
   }
   .header__btn-hamburger {
-    top: 43px;
-    right: 33px;
+    top: 52px;
+    right: 40px;
   }
 }
 
@@ -271,6 +275,7 @@ img {
   .hero__btn {
     margin-top: 52px;
     margin-bottom: 137.5px;
+    margin-left: 0;
   }
 }
 
@@ -403,6 +408,7 @@ img {
 @media screen and (min-width: 768px) {
   .backdrop {
     padding-top: 41px;
+    padding-left: 40px;
   }
   .menu-open__logo-icon {
     width: 128px;
@@ -418,6 +424,10 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .menu-open__btn-close {
+    right: 40px;
+    top: 52px;
   }
 }
 
