@@ -12,6 +12,13 @@
   background-repeat: no-repeat;
   // background-color: E5E5E5;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero__section {
+    background-image: url('../images/hero-wave-desktop@2x.jpg');
+  }
+}
 .hero__header {
   font-family: Montserrat;
   font-style: normal;
