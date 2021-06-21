@@ -131,6 +131,13 @@
 @media screen and (min-width: 1280px) {
   .hero__text-bottom {
     display: inline;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 164.9%;
+  }
+  .hero__text-top {
+    font-size: 20px;
+    line-height: 164.9%;
   }
   .hero__header {   
     font-size: 58px;
@@ -149,6 +156,14 @@
   } 
   .hero__btn {
     margin-left: 0;
+    padding-top: 0;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 354px;
+    height: 70px;
   }
  
 }
