@@ -16,6 +16,27 @@
 
 .hero__container {
   padding-top: 50px;
+  padding-bottom: 47.5px;
+  // background-image: url('../images/hero-wave-desktop.jpg');
+  background-image: url('../images/hero-wave-desktop-png.png');
+  // /* contain nie daje takiego cienia */
+  background-size: contain;
+  // /* background-size: auto; */
+  // /* cover jakos lepiej z cieniem wyglada */
+  background-size: cover; 
+  // /* background-size: 480px; */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  // background-color: E5E5E5;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero__container {
+    // background-image: url('../images/hero-wave-desktop@2x.jpg');
+    background-image: url('../images/hero-wave-desktop-png@2x.png');
+  }
+
 }
 
 @media screen and (min-width: 480px) {
@@ -24,26 +45,39 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .container {
-    padding: 0 40px;
-  }
   .header__container {
     padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .hero__container {
+    // max-width: calc(100% - 80px);
     display: flex;
     padding-top: 90px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .advantages__container {
    padding-bottom: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
+  .header__container {
+    padding-top: 40px;
+    padding-right: 191px;
+    padding-left: 181px;
+  }
   .hero__container {
     display: flex;
-    padding-top: 113px;
+    padding-top: 63px;    
+    padding-right: 54px;
+    padding-left: 183.5px;
   }  
   .advantages__container {
   padding-bottom: 130px;
+  padding-left: 183.5px;
+  padding-right: 183px;
   }
 }
