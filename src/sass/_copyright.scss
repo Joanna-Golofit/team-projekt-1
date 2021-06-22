@@ -1,0 +1,21 @@
+.copyright {
+  color: #b9b9b9;
+  font-size: 14px;
+  line-height: 2;
+
+  &__background {
+    background-color: #111518;
+    width: 100%;
+    height: 70px;
+    padding-top: 21px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .copyright {
+    text-align: left;
+    padding-left: 40px;
+    }
+  }
+
