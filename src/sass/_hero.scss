@@ -1,26 +1,26 @@
 /* <!--  HERO  --> */
-.hero__section {
-  padding-bottom: 47.5px;
-  // background-image: url('../images/hero-wave-desktop.jpg');
-  background-image: url('../images/hero-wave-desktop-png.png');
-  // /* contain nie daje takiego cienia */
-  background-size: contain;
-  // /* background-size: auto; */
-  // /* cover jakos lepiej z cieniem wyglada */
-  // /* background-size: cover; */
-  // /* background-size: 480px; */
-  background-position: bottom;
-  background-repeat: no-repeat;
-  // background-color: E5E5E5;
-}
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero__section {
-    // background-image: url('../images/hero-wave-desktop@2x.jpg');
-    background-image: url('../images/hero-wave-desktop-png@2x.png');
-  }
-}
+// .hero__section {
+//   padding-bottom: 47.5px;
+//   // background-image: url('../images/hero-wave-desktop.jpg');
+//   background-image: url('../images/hero-wave-desktop-png.png');
+//   // /* contain nie daje takiego cienia */
+//   background-size: contain;
+//   // /* background-size: auto; */
+//   // /* cover jakos lepiej z cieniem wyglada */
+//   // /* background-size: cover; */
+//   // /* background-size: 480px; */
+//   background-position: bottom;
+//   background-repeat: no-repeat;
+//   // background-color: E5E5E5;
+// }
+// @media (min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//   .hero__section {
+//     // background-image: url('../images/hero-wave-desktop@2x.jpg');
+//     background-image: url('../images/hero-wave-desktop-png@2x.png');
+//   }
+// }
 .hero__header {
   font-family: Montserrat;
   font-style: normal;
@@ -142,17 +142,31 @@
   .hero__header {   
     font-size: 58px;
     line-height: 130%;
+    padding-top: 50px;
   }
   .hero__img {
-    width: 841px;
-    height: 718px;    
-    transform: translate(130px,-54px);
+    height: 100%;
+    width: 100%;
+    display: block;
+    // max-width: 841px;
+    // max-height: 718px;  
+    object-fit: contain;
+    transform: translate(0, 0);
+    // transform: translate(130px,-54px);
+    // position: absolute;
+    // overflow: hidden;
+    // top: -54px;
+    // left: 130px;
   }
   .hero__wrapper {
-    min-width: 495px
+    // min-width: 495px;
+    width: 485px;
   }
-  .hero__img-wrapper {
-    flex-basis: calc(100% / 2);
+  .hero__img-wrapper {    
+    // position: relative;       
+    height: 718px;
+    // overflow: hidden;
+    // flex-basis: calc(100% / 2);
   } 
   .hero__btn {
     margin-left: 0;
