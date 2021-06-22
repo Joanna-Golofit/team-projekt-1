@@ -29,6 +29,15 @@
   background-repeat: no-repeat;
   // background-color: E5E5E5;
 }
+.contacts__container {
+  max-width: 1314px;
+  margin: auto;
+}
+.footer__container {
+  max-width: 1314px;
+  margin: auto;
+}
+
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
