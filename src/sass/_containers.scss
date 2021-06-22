@@ -64,7 +64,7 @@
     display: flex;
     padding-top: 90px;
     padding-left: 40px;
-    padding-right: 40px;
+    // padding-right: 40px;
   }
   .advantages__container {
    padding-bottom: 50px;
@@ -80,8 +80,9 @@
   }
   .hero__container {
     display: flex;
-    padding-top: 63px;    
-    padding-right: 54px;
+    // padding-top: 63px;   
+    padding-top: 0; 
+    // padding-right: 54px;
     padding-left: 183.5px;
   }  
   .advantages__container {
