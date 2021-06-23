@@ -10,18 +10,28 @@
   width: 59px;
   height: 60px;
 
-  background-image: url(../images/advantages-1.svg);
+  // background-image: url(../images/advantages-1.svg);
   background-repeat: no-repeat;
-  background-position: center;
-  // background-size: contain;
-  background-size: 59px 60px;
+  // background-position: center;
+  background-size: contain;
+  // background-size: 59px 60px;
 
   // position: relative;
   position: absolute;
   // top: 65px;
   // left: -70px;
   left: 0;
-  top: 0px;
+  top: 0;
+}
+
+.advantages__description--program::before {
+  background-image: url(../images/advantages-1.svg);
+}
+.advantages__description--methods::before {
+background-image: url(../images/advantages-2.svg);
+}
+.advantages__description--result::before {
+background-image: url(../images/advantages-3.svg);
 }
 // .advantages__item::before {
 //   display: block;
@@ -51,14 +61,15 @@
   margin-right: -10px;
   justify-content: left;
   align-items: center;
-  padding-left: 80px;
+  // align-items: baseline;
+  padding-left: 75px;
 }
 .advantages__item {
   // dla .advantages__description
   position: relative;
   margin-left: 10px;
   margin-right: 10px;
-  flex-basis: calc(100% / 3 - 10px);
+  // flex-basis: calc(100% / 3 - 10px);
   padding-bottom: 33px;
   padding-left: 68px;
 }
@@ -75,15 +86,45 @@
   color: #111518;
 }
 
+@media screen and (min-width: 480px) {
+  .advantages__list {
+    align-items: baseline;
+    // flex-wrap: nowrap;
+    // padding-left: 0;
+  }
+  .advantages__description::before {
+    top: -13px;
+  }
+  .advantages__item {
+    padding-bottom: 63px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .advantages__list {
+    align-items: baseline;
+    // display: block;
     flex-wrap: nowrap;
+    padding-left: 0;
+  }
+  .advantages__description::before {
+    top: 0;
   }
 }
 @media screen and (min-width: 1280px) {
-    .advantages__list {
+  .advantages__list {
     flex-wrap: nowrap;
+    align-items: baseline;
     padding-left: 0;
+  }
+  .advantages__description {
+    font-size: 20px;
+  }
+  .advantages__description::before {
+    width: 100px;
+    height: 102px;
+    top: -18px;
+    left: -11px;
   }
 }
 
