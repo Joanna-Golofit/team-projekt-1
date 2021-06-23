@@ -171,6 +171,7 @@ img {
   .header__btn {
     display: block;
     margin-right: 0;
+    min-width: 336px;
   }
   .header__navigation {
     display: block;
@@ -360,6 +361,9 @@ img {
             align-items: center;
     width: 354px;
     height: 70px;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.14em;
   }
 }
 
@@ -373,13 +377,23 @@ img {
   content: '';
   width: 59px;
   height: 60px;
-  background-image: url(../images/advantages-1.svg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 59px 60px;
+  background-size: contain;
   position: absolute;
   left: 0;
-  top: 0px;
+  top: 0;
+}
+
+.advantages__description--program::before {
+  background-image: url(../images/advantages-1.svg);
+}
+
+.advantages__description--methods::before {
+  background-image: url(../images/advantages-2.svg);
+}
+
+.advantages__description--result::before {
+  background-image: url(../images/advantages-3.svg);
 }
 
 .advantages__list {
@@ -396,15 +410,13 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 80px;
+  padding-left: 75px;
 }
 
 .advantages__item {
   position: relative;
   margin-left: 10px;
   margin-right: 10px;
-  -ms-flex-preferred-size: calc(100% / 3 - 10px);
-      flex-basis: calc(100% / 3 - 10px);
   padding-bottom: 33px;
   padding-left: 68px;
 }
@@ -419,10 +431,31 @@ img {
   color: #111518;
 }
 
+@media screen and (min-width: 480px) {
+  .advantages__list {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .advantages__description::before {
+    top: -13px;
+  }
+  .advantages__item {
+    padding-bottom: 63px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .advantages__list {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    padding-left: 0;
+  }
+  .advantages__description::before {
+    top: 0;
   }
 }
 
@@ -430,7 +463,19 @@ img {
   .advantages__list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     padding-left: 0;
+  }
+  .advantages__description {
+    font-size: 20px;
+  }
+  .advantages__description::before {
+    width: 100px;
+    height: 102px;
+    top: -18px;
+    left: -11px;
   }
 }
 
