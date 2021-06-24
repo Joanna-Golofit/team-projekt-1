@@ -22,17 +22,17 @@
 //   }
 // }
 .hero__header {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 130%;
   letter-spacing: 0.03em;
-  color: #111518;  
+  color: #111518;
   margin-bottom: 8px;
 }
 .hero__text-top {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -43,7 +43,7 @@
   color: #b9b9b9;
 }
 .hero__text-bottom {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -59,7 +59,7 @@
 .btn {
   width: 260px;
   height: 48px;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
@@ -105,7 +105,7 @@
   }
   .hero__wrapper {
     width: calc(100% / 2);
-  } 
+  }
 
   .hero__img-wrapper {
     flex-basis: calc(100% / 2);
@@ -114,16 +114,16 @@
   }
   .hero__img {
     width: 376px;
-    height: 321px;    
+    height: 321px;
     transform: translate(24px,-5px);
   }
-  .hero__header {   
+  .hero__header {
     font-size: 26px;
     line-height: 130%;
   }
   .hero__btn {
     margin-top: 52px;
-    margin-bottom: 137.5px;    
+    margin-bottom: 137.5px;
     margin-left: 0;
   }
 }
@@ -139,7 +139,7 @@
     font-size: 20px;
     line-height: 164.9%;
   }
-  .hero__header {   
+  .hero__header {
     font-size: 58px;
     line-height: 130%;
     padding-top: 70px;
@@ -149,7 +149,7 @@
     width: 100%;
     display: block;
     // max-width: 841px;
-    // max-height: 718px;  
+    // max-height: 718px;
     object-fit: contain;
     transform: translate(0, 0);
     // transform: translate(130px,-54px);
@@ -162,14 +162,14 @@
     // min-width: 495px;
     width: 495px;
   }
-  .hero__img-wrapper {    
-    // position: relative;       
+  .hero__img-wrapper {
+    // position: relative;
     height: 718px;
     padding-left: 116px;
     flex-grow: 1;
     // overflow: hidden;
     // flex-basis: calc(100% / 2);
-  } 
+  }
   .hero__btn {
     margin-left: 0;
     padding-top: 0;
@@ -182,8 +182,8 @@
     height: 70px;
     font-size: 14px;
     line-height: 17px;
-    letter-spacing: 0.14em; 
+    letter-spacing: 0.14em;
   }
- 
+
 }
 /* <!--  END HERO  --> */

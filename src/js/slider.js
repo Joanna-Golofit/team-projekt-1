@@ -21,9 +21,9 @@
     let moreText = target.previousSibling;
 
     if (moreText.classList.contains('slides__about_active')) {
-      target.innerHTML = 'Читать дальше';
+      target.innerHTML = 'Read more';
     } else {
-      target.innerHTML = 'Cвернуть';
+      target.innerHTML = 'Collapse';
     }
 
     moreText.classList.toggle('slides__about_active');
@@ -34,11 +34,11 @@
     let allTextTablet = document.querySelectorAll('.slides__about-tablet');
 
     btnMobile.forEach(e => {
-      e.innerHTML = 'Читать дальше';
+      e.innerHTML = 'Read more';
     });
 
     btnDesctop.forEach(e => {
-      e.innerHTML = 'Читать дальше';
+      e.innerHTML = 'Read more';
     });
 
     allText.forEach(e => {
