@@ -1,0 +1,797 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #858585;
+  font-size: 11px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.teacher-section {
+  margin-top: 238px;
+  padding-bottom: 16px;
+  position: relative;
+}
+
+.teacher-section__title {
+  font-family: "MontserratEB", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 21px;
+  color: #111517;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.teacher-section__img img {
+  margin-bottom: 19px;
+  width: 279px;
+}
+
+.teacher-achievement__name {
+  font-family: "MontserratEB", sans-serif;
+  color: #111517;
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: 800;
+  letter-spacing: .7px;
+}
+
+.teacher-achievement__list {
+  margin: 0;
+  margin-bottom: 17px;
+  padding: 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(133, 133, 133, 0.38);
+  list-style: none;
+}
+
+.teacher-achievement__item {
+  font-family: "MontserratSB", sans-serif;
+  position: relative;
+  padding-left: 34px;
+  width: 280px;
+  color: #111517;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: .7px;
+}
+
+.teacher-achievement__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.teacher-achievement__item::before {
+  display: block;
+  content: '';
+  width: 16px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/icon-check.svg");
+}
+
+.teacher-achievement__about {
+  font-family: "MontserratR", sans-serif;
+  margin: 0;
+  margin-bottom: 13px;
+  padding-left: 15px;
+  letter-spacing: .7px;
+
+  &:last-of-type {
+    margin-bottom: 8px;
+  }
+
+  &:first-of-type {
+    &::before {
+      margin-bottom: 17px;
+      display: block;
+      content: '';
+      width: 25px;
+      height: 2px;
+      background-color: #ff6b08;
+    }
+  }
+}
+
+.teacher-achievement__link {
+  display: block;
+  font-family: "MontserratR", sans-serif;
+  padding-left: 15px;
+  color: #ff6b08;
+  font-size: 11px;
+  line-height: 29px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:not(:last-of-type) {
+    margin-bottom: 8px;
+  }
+}
+
+.certificate-modal {
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, .8);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all .5s linear;
+  z-index: 100;
+  overflow-y: scroll;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  &__img {
+    width: 320px;
+    height: 450px;
+  }
+}
+
+.certificate-modal_active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.guaranties-section {
+  padding-top: 6px;
+}
+
+.guaranties-section__title {
+  font-family: "MontserratEB", sans-serif;
+  font-weight: 800;
+  margin-bottom: 3px;
+  color: #111517;
+  font-size: 20px;
+  line-height: 63px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.guaranties {
+  background-color: #f1f1f1;
+  padding-top: 22px;
+  padding-bottom: 24px;
+}
+
+.guaranties__list {
+  padding: 0;
+  list-style: none;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    border-width: 1px;
+    border-color: #bababa;
+    border-style: dotted;
+    position: absolute;
+    width: 1px;
+    height: 80%;
+    top: 10px;
+    left: 6px;
+    z-index: 1;
+  }
+}
+
+.guaranties__item {
+  font-family: "MontserratM", sans-serif;
+  font-weight: 500;
+  position: relative;
+  padding-left: 36px;
+  letter-spacing: .6px;
+  width: 280px;
+  color: #18191d;
+}
+
+.guaranties__item:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.guaranties__item::before {
+  display: block;
+  content: '';
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: -6px;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/Campfire.svg");
+  z-index: 2;
+}
+
+.guaranties__item span {
+  color: #ff6b08;
+}
+
+.reviews-section {
+  padding-top: 44px;
+  padding-bottom: 55px;
+  text-align: center;
+}
+
+.reviews-section__title {
+  font-family: "MontserratEB", sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 17px;
+  color: #111517;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 800;
+}
+
+.reviews-section__title-tablet {
+  display: none;
+}
+
+.slider {
+  position: relative;
+  width: 280px;
+  margin: auto;
+}
+
+.slides__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slides__content {
+  padding: 22px 24px 34px;
+  background-color: #ffffff;
+  // box-shadow: 4px 6.928px 34.96px 11.04px rgba(29, 29, 27, 0.09);
+}
+
+.slides__item {
+  box-shadow: 0 0 10px 0 rgba(29, 29, 27, 0.09);
+}
+
+.slides__image {
+  width: 80px;
+  margin: 0 auto 14px;
+}
+
+.slides__link {
+  display: block;
+  margin-bottom: 8px;
+  width: 34px;
+  margin: 0 auto;
+}
+
+.slides__content-person {
+  margin-bottom: 10px;
+}
+
+.slides__title {
+  font-family: "MontserratEB", sans-serif;
+  color: #ff6b08;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: .6px;
+  margin-bottom: 5px;
+}
+
+.slides__subtitle {
+  font-family: "MontserratM", sans-serif;
+  margin: 0;
+  margin-bottom: 12px;
+  color: #858585;
+  line-height: 17px;
+  font-weight: 500;
+  letter-spacing: .6px;
+}
+
+.slides__about {
+  font-family: "MontserratM", sans-serif;
+  margin: 0;
+  color: #18191d;
+  font-weight: 500;
+  letter-spacing: .6px;
+  height: 165px;
+  overflow: hidden;
+  transition: all .5s linear;
+}
+
+.slides__about_active {
+  height: 100%;
+  overflow: visible;
+}
+
+.slides__about-tablet {
+  display: none;
+}
+
+.slides__about-tablet+.slides__button {
+  display: none;
+}
+
+.slides__button {
+  font-family: "MontserratM", sans-serif;
+  margin: 0;
+  padding: 0;
+  right: 36px;
+  bottom: 34px;
+  color: #ff6b08;
+  font-size: 11px;
+  line-height: 20px;
+  font-weight: 500;
+  text-decoration: underline;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.slider__pagination {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 12px;
+  width: 184px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+}
+
+.slider-pagination__item {
+  cursor: pointer;
+  border: 2px solid transparent;
+  background: none;
+}
+
+.slider-pagination__item:nth-last-child(-n +4) {
+  display: none;
+}
+
+.slider-pagination__item:hover,
+.slider-pagination__item:focus {
+  border: 2px solid #ff6b08;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 688px;
+  }
+
+  .teacher-section {
+    margin-top: 215px;
+    padding-bottom: 20px;
+  }
+
+  .teacher-section__title {
+    margin-bottom: 15px;
+    font-size: 26px;
+    line-height: 63px;
+    letter-spacing: 1.2px;
+  }
+
+  .teacher__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .teacher-section__img img {
+    margin-bottom: 0;
+    width: 247px;
+    align-self: baseline;
+  }
+
+  .teacher-achievement {
+    flex-basis: 398px;
+  }
+
+  .teacher-achievement__name {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: .8;
+    letter-spacing: 1px;
+  }
+
+  .teacher-achievement__list {
+    padding-top: 18px;
+    margin-bottom: 18px;
+  }
+
+  .teacher-achievement__item {
+    width: 374px;
+    letter-spacing: .7px;
+  }
+
+  .teacher-achievement__about {
+    padding-left: 2px;
+    margin-bottom: 1rem;
+    letter-spacing: .5px;
+
+    &:first-of-type {
+      &::before {
+        margin-bottom: 14px;
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 13px;
+    }
+  }
+
+  .teacher-achievement__link {
+    padding-left: 2px;
+    letter-spacing: .5px;
+  }
+
+  .certificate-modal {
+    &__img {
+      width: 354px;
+      height: 500px;
+    }
+  }
+
+  .guaranties-section {
+    padding-top: 10px;
+  }
+
+  .guaranties-section__title {
+    margin-bottom: 9px;
+    font-size: 26px;
+  }
+
+  .guaranties {
+    padding-top: 34px;
+    padding-bottom: 29px;
+    width: 688px;
+    margin: 0 auto;
+  }
+
+  .guaranties__list {
+    padding: 0 55px;
+
+    &::after {
+      left: 67px;
+    }
+  }
+
+  .guaranties__item {
+    padding-left: 42px;
+    letter-spacing: .5px;
+    width: 100%;
+
+    &::before {
+      left: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  .reviews-section {
+    padding-top: 44px;
+    padding-bottom: 75px;
+  }
+
+  .reviews-section__title {
+    display: none;
+  }
+
+  .reviews-section__title-tablet {
+    font-family: "MontserratEB", sans-serif;
+    margin-bottom: 20px;
+    color: #111517;
+    font-size: 26px;
+    line-height: 63px;
+    font-weight: 800;
+    display: block;
+    letter-spacing: 1px;
+  }
+
+  .slider {
+    width: 688px;
+  }
+
+  .slider__ctrl {
+    bottom: 208px;
+    width: 25px;
+    height: 14px;
+  }
+
+  .slider__ctrl-prev {
+    background-image: url(../images/icon-prev-768.png);
+    left: -18px;
+  }
+
+  .slider__ctrl-next {
+    background-image: url(../images/icon-next-768.png);
+    right: -18px;
+  }
+
+  .slides__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 44px 0;
+  }
+
+  .slides__content-person {
+    padding-top: 22px;
+    width: 152px;
+  }
+
+  .slides__content-about {
+    width: 528px;
+    text-align: left;
+    padding-right: 60px;
+  }
+
+  .slides__title {
+    font-size: 18px;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  .slides__subtitle {
+    font-size: 13px;
+    letter-spacing: .4px;
+    margin-bottom: 18px;
+  }
+
+  .slides__about {
+    display: none;
+  }
+
+  .slides__about+.slides__button {
+    display: none;
+  }
+
+  .slides__about-tablet+.slides__button {
+    display: inline-block;
+  }
+
+  .slides__about-tablet {
+    display: block;
+    margin: 0;
+    color: #18191d;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    height: 120px;
+    overflow: hidden;
+  }
+
+  .slides__about_active {
+    height: auto;
+    overflow: visible;
+  }
+
+  .slider__pagination {
+    padding-top: 20px;
+    width: 505px;
+  }
+
+  .slider-pagination__item:nth-last-child(-n +4) {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    min-width: 1210px;
+  }
+
+  .teacher-section {
+    margin-top: 81px;
+    padding-bottom: 48px;
+    letter-spacing: 1.7px;
+  }
+
+  .teacher-section__title {
+    margin-bottom: 44px;
+    font-size: 42px;
+    letter-spacing: 1.7px;
+  }
+
+  .teacher-section__img img {
+    width: 494px;
+  }
+
+  .teacher-achievement {
+    flex-basis: 631px;
+  }
+
+  .teacher-achievement__name {
+    margin-bottom: 15px;
+    font-size: 29px;
+  }
+
+  .teacher-achievement__list {
+    width: 602px;
+    margin-bottom: 26px;
+    padding-top: 32px;
+  }
+
+  .teacher-achievement__item {
+    padding-left: 48px;
+    font-size: 17px;
+    line-height: 29px;
+    width: 100%;
+  }
+
+  .teacher-achievement__item::before {
+    width: 35px;
+    height: 35px;
+  }
+
+  .teacher-achievement__about {
+    padding: 0;
+    font-size: 17px;
+    line-height: 29px;
+
+    &:last-of-type {
+      margin-bottom: 17px;
+    }
+
+    &:first-of-type {
+      &::before {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .teacher-achievement__link {
+    padding: 0;
+    font-size: 17px;
+  }
+
+  .certificate-modal {
+    &__img {
+      width: 512px;
+      height: 722px;
+    }
+  }
+
+  .guaranties-section {
+    padding-top: 26px;
+  }
+
+  .guaranties-section__title {
+    margin-bottom: 26px;
+    font-size: 42px;
+    letter-spacing: 2px;
+  }
+
+  .guaranties {
+    padding-top: 48px;
+    padding-bottom: 42px;
+    width: 1210px;
+  }
+
+  .guaranties__list {
+    padding-left: 116px;
+    padding-right: 120px;
+
+    &::after {
+      left: 125px;
+    }
+  }
+
+  .guaranties__item {
+    padding-left: 56px;
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: .9px;
+
+    &:nth-of-type(2) {
+      span {
+        display: block;
+        letter-spacing: 1.1px;
+      }
+    }
+  }
+
+  .guaranties__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .guaranties__item::before {
+    width: 35px;
+    height: 35px;
+    left: -8px;
+  }
+
+  .reviews-section {
+    padding-top: 78px;
+    padding-bottom: 100px;
+  }
+
+  .reviews-section__title-tablet {
+    margin-bottom: 27px;
+    font-size: 42px;
+    letter-spacing: 2px;
+  }
+
+  .slider {
+    width: 1064px;
+    margin-left: 81px;
+  }
+
+  .slides__about-tablet {
+    height: 120px;
+  }
+
+  .slides__about_active {
+    height: auto;
+    overflow: visible;
+  }
+
+  .slides__content {
+    padding: 40px 0 39px;
+    padding-left: 52px;
+  }
+
+  .slides__content-person {
+    padding-top: 4px;
+    width: 213px;
+  }
+
+  .slides__image {
+    width: 145px;
+    margin: 0 auto 22px;
+  }
+
+  .slides__content-about {
+    width: 805px;
+    padding-right: 95px;
+  }
+
+  .slides__title {
+    font-size: 25px;
+    letter-spacing: 1.3px;
+    margin-bottom: 11px;
+  }
+
+  .slides__subtitle {
+    width: 440px;
+    margin-bottom: 14px;
+  }
+
+  .slides__about-tablet {
+    font-size: 17px;
+    line-height: 29px;
+    letter-spacing: 1.6px;
+  }
+
+  .slides__button {
+    font-size: 17px;
+    line-height: 29px;
+  }
+
+  .slider__ctrl {
+    bottom: 260px;
+  }
+
+  .slider__ctrl-prev {
+    left: -55px;
+  }
+
+  .slider__ctrl-next {
+    right: -55px;
+  }
+
+  .slider__pagination {
+    padding-top: 38px;
+    width: 594px;
+  }
+}

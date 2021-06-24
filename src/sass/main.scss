@@ -14,7 +14,12 @@
 @import './problems-mobile';
 @import './problems-tablet';
 @import './problems-desktop';
+@import './teacher';
 @import './contacts';
 @import './contact-form';
 @import './footer';
 @import './copyright';
+
+// Style dla slidera OwlCarousel
+@import './owl.carousel.scss';
+@import './owl.theme.default.scss';
