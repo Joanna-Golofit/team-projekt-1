@@ -709,6 +709,220 @@ img {
   }
 }
 
+/* HOW DO WE DO IT */
+.title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #111518;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.description__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #111518;
+  margin-top: 20px;
+}
+
+.description__title::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #ff6b09;
+  margin-left: calc(50% - 15px);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.description__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #b9b9b9;
+}
+
+.description__item {
+  width: 280px;
+  height: 280px;
+  padding-top: 30px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+}
+
+.description__icon {
+  text-align: center;
+  padding-top: 0 auto;
+  fill: #ff6b09;
+}
+
+.description__item:hover {
+  background-color: #ff6b09;
+}
+
+.description__item:hover > .description__icon {
+  fill: #fff;
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.description__item:hover > .description__text {
+  color: #fff;
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.description__item:hover > .description__title {
+  color: #fff;
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.description__item:hover > .description__title::after {
+  background-color: #fff;
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #111518;
+    text-align: center;
+  }
+  .description__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -20px;
+    margin-top: -27px;
+    -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+  }
+  .description__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: #111518;
+    margin-top: 20px;
+  }
+  .description__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: #b9b9b9;
+  }
+  .description__item {
+    -ms-flex-preferred-size: calc(100% / 2 - 20px);
+        flex-basis: calc(100% / 2 - 20px);
+    width: 334px;
+    height: 334px;
+    padding-top: 30px;
+    margin-left: 20px;
+    margin-top: 27px;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+  }
+  .description__icon {
+    text-align: center;
+    padding-top: 0 auto;
+    fill: #ff6b09;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #111518;
+    text-align: center;
+    margin-top: 280px;
+  }
+  .description__list {
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+  .description__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: #111518;
+    margin-top: 20px;
+  }
+  .description__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: #b9b9b9;
+  }
+  .description__item {
+    -ms-flex-preferred-size: calc(100% / 3 - 20px);
+        flex-basis: calc(100% / 3 - 20px);
+    width: 425px;
+    height: 396px;
+    padding: 40px 30px 55px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+  }
+  .description__icon {
+    text-align: center;
+    padding-top: 0 auto;
+    fill: #ff6b09;
+  }
+}
+
+/* END HOW DO WE DO IT */
 body {
   font-family: 'Montserrat', sans-serif;
   color: #858585;
@@ -926,7 +1140,7 @@ body {
   top: 0;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../images/Campfire.svg");
+  background-image: url("../images/icon-campfire.svg");
   z-index: 2;
 }
 
@@ -2195,6 +2409,416 @@ body {
   .benefits__ordinal-number {
     font-size: 20px;
     line-height: 164.9%;
+  }
+}
+
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+/*
+ *  Owl Carousel - Core
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1;
+}
+
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+  touch-action: manipulation;
+  -moz-backface-visibility: hidden;
+  /* fix firefox animation glitch */
+}
+
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+.owl-carousel .owl-nav.disabled,
+.owl-carousel .owl-dots.disabled {
+  display: none;
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-dot {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot {
+  color: inherit;
+  font: inherit;
+}
+
+.owl-carousel.owl-loaded {
+  display: block;
+}
+
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block;
+}
+
+.owl-carousel.owl-hidden {
+  opacity: 0;
+}
+
+.owl-carousel.owl-refresh .owl-item {
+  visibility: hidden;
+}
+
+.owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.owl-carousel.owl-grab {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.owl-carousel.owl-rtl {
+  direction: rtl;
+}
+
+.owl-carousel.owl-rtl .owl-item {
+  float: right;
+}
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block;
+}
+
+/*
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.owl-carousel .owl-animated-in {
+  z-index: 0;
+}
+
+.owl-carousel .owl-animated-out {
+  z-index: 1;
+}
+
+.owl-carousel .fadeOut {
+  -webkit-animation-name: fadeOut;
+          animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  -webkit-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+
+/*
+ * 	Owl Carousel - Lazy Load Plugin
+ */
+.owl-carousel .owl-item {
+  /**
+			This is introduced due to a bug in IE11 where lazy loading combined with autoheight plugin causes a wrong
+			calculation of the height of the owl-item that breaks page layouts
+		 */
+}
+
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease;
+  transition: opacity 400ms ease;
+}
+
+.owl-carousel .owl-item .owl-lazy[src^=""],
+.owl-carousel .owl-item .owl-lazy:not([src]) {
+  max-height: 0;
+}
+
+/*
+ * 	Owl Carousel - Video Plugin
+ */
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000;
+}
+
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("../images/owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 100ms ease;
+  transition: -webkit-transform 100ms ease;
+  transition: transform 100ms ease;
+  transition: transform 100ms ease, -webkit-transform 100ms ease;
+}
+
+.owl-carousel .owl-video-play-icon:hover {
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
+}
+
+.owl-carousel .owl-video-playing .owl-video-tn,
+.owl-carousel .owl-video-playing .owl-video-play-icon {
+  display: none;
+}
+
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: opacity 400ms ease;
+  transition: opacity 400ms ease;
+}
+
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.owl-item {
+  padding: 10px;
+}
+
+.owl-dot {
+  display: inline-block;
+  content: "";
+  width: 54px;
+  height: 54px;
+  background-image: url("../images/slider/54x54/slider-01.png") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.owl-dots .owl-dot {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.owl-dots .owl-dot:not(:last-of-type) {
+  margin-right: 5px;
+}
+
+.owl-dots .owl-dot.active {
+  border: 2px solid #ff6b08;
+  border-radius: 50%;
+}
+
+.owl-dots .owl-dot:first-of-type {
+  background-image: url("../images/slider/54x54/slide-1.png") !important;
+}
+
+.owl-dots .owl-dot:nth-of-type(2) {
+  background-image: url("../images/slider/54x54/slide-2.png") !important;
+}
+
+.owl-dots .owl-dot:nth-of-type(3) {
+  background-image: url("../images/slider/54x54/slide-3.png") !important;
+}
+
+.owl-dots .owl-dot:nth-of-type(4) {
+  background-image: url("../images/slider/54x54/slide-4.png") !important;
+}
+
+.owl-dots .owl-dot:nth-of-type(5) {
+  background-image: url("../images/slider/54x54/slide-5.png") !important;
+}
+
+.owl-dots .owl-dot:nth-of-type(6) {
+  background-image: url("../images/slider/54x54/slide-6.png") !important;
+}
+
+.owl-dots .owl-dot:nth-of-type(7) {
+  background-image: url("../images/slider/54x54/slide-7.png") !important;
+}
+
+.owl-dots .owl-dot:nth-of-type(8) {
+  background-image: url("../images/slider/54x54/slide-8.png") !important;
+}
+
+.owl-dots .owl-dot:nth-of-type(9) {
+  background-image: url("../images/slider/54x54/slide-9.png") !important;
+}
+
+.owl-dots .owl-dot:nth-of-type(10) {
+  background-image: url("../images/slider/54x54/slide-10.png") !important;
+}
+
+.owl-dots .owl-dot:nth-of-type(11) {
+  background-image: url("../images/slider/54x54/slide-11.png") !important;
+}
+
+.owl-dots .owl-dot:nth-of-type(12) {
+  background-image: url("../images/slider/54x54/slide-12.png") !important;
+}
+
+.owl-dots .owl-dot:nth-of-type(13) {
+  background-image: url("../images/slider/54x54/slide-13.png") !important;
+}
+
+.owl-dots .owl-dot:nth-of-type(14) {
+  background-image: url("../images/slider/54x54/slide-14.png") !important;
+}
+
+.owl-dots .owl-dot:nth-of-type(15) {
+  background-image: url("../images/slider/54x54/slide-15.png") !important;
+}
+
+.owl-dots .owl-dot:nth-of-type(16) {
+  background-image: url("../images/slider/54x54/slide-16.png") !important;
+}
+
+.owl-dots .owl-dot:nth-of-type(17) {
+  background-image: url("../images/slider/54x54/slide-17.png") !important;
+}
+
+.owl-dots .owl-dot:focus {
+  outline: none;
+}
+
+.owl-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.owl-nav .owl-next {
+  border: none;
+  background-color: transparent;
+  width: 20px;
+  height: 11px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/icon-next-320.png");
+}
+
+.owl-nav .owl-prev {
+  border: none;
+  background-color: transparent;
+  width: 20px;
+  height: 11px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/icon-prev-320.png");
+}
+
+@media (min-width: 768px) {
+  .owl-nav {
+    width: 104%;
+  }
+  .owl-nav .owl-next {
+    width: 25px;
+    height: 14px;
+    background-image: url("../images/icon-next-768.png");
+  }
+  .owl-nav .owl-prev {
+    width: 25px;
+    height: 14px;
+    background-image: url("../images/icon-prev-768.png");
+  }
+}
+
+@media (min-width: 1280px) {
+  .owl-nav {
+    width: 110%;
   }
 }
 /*# sourceMappingURL=main.css.map */
