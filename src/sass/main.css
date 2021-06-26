@@ -932,7 +932,7 @@ body {
 }
 
 .teacher-section {
-  margin-top: 238px;
+  margin-top: 330px;
   padding-bottom: 16px;
   position: relative;
 }
@@ -1493,7 +1493,7 @@ body {
     min-width: 1210px;
   }
   .teacher-section {
-    margin-top: 81px;
+    margin-top: 400px;
     padding-bottom: 48px;
     letter-spacing: 1.7px;
   }
@@ -2626,7 +2626,6 @@ body {
   top: 50%;
   margin-left: -40px;
   margin-top: -40px;
-  background: url("../images/owl.video.play.png") no-repeat;
   cursor: pointer;
   z-index: 1;
   -webkit-backface-visibility: hidden;
@@ -2672,7 +2671,7 @@ body {
   content: "";
   width: 54px;
   height: 54px;
-  background-image: url("../images/slider/54x54/slider-01.png") !important;
+  background-image: url("../images/slider/54x54/slide-1.png") !important;
   background-repeat: no-repeat;
   background-size: cover;
 }
