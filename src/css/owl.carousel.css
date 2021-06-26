@@ -6,7 +6,7 @@
 /*
  *  Owl Carousel - Core
  */
- .owl-carousel {
+.owl-carousel {
   display: none;
   width: 100%;
   -webkit-tap-highlight-color: transparent;
@@ -17,7 +17,6 @@
 
 .owl-carousel .owl-stage {
   position: relative;
-  -ms-touch-action: pan-Y;
   touch-action: manipulation;
   -moz-backface-visibility: hidden;
   /* fix firefox animation glitch */
@@ -68,7 +67,6 @@
 .owl-carousel .owl-dot {
   cursor: pointer;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -99,7 +97,6 @@
 }
 
 .owl-carousel.owl-drag .owl-item {
-  -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -109,6 +106,7 @@
 
 .owl-carousel.owl-grab {
   cursor: move;
+  cursor: -webkit-grab;
   cursor: grab;
 }
 
@@ -129,8 +127,10 @@
  *  Owl Carousel - Animate Plugin
  */
 .owl-carousel .animated {
-  animation-duration: 1000ms;
-  animation-fill-mode: both;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .owl-carousel .owl-animated-in {
@@ -142,19 +142,27 @@
 }
 
 .owl-carousel .fadeOut {
-  animation-name: fadeOut;
+  -webkit-animation-name: fadeOut;
+          animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes fadeOut {
   0% {
     opacity: 1;
   }
-
   100% {
     opacity: 0;
   }
 }
-
 /*
  * 	Owl Carousel - Auto Height Plugin
  */
@@ -167,9 +175,9 @@
  */
 .owl-carousel .owl-item {
   /**
-			This is introduced due to a bug in IE11 where lazy loading combined with autoheight plugin causes a wrong
-			calculation of the height of the owl-item that breaks page layouts
-		 */
+  	This is introduced due to a bug in IE11 where lazy loading combined with autoheight plugin causes a wrong
+  	calculation of the height of the owl-item that breaks page layouts
+   */
 }
 
 .owl-carousel .owl-item .owl-lazy {
@@ -206,7 +214,6 @@
 }
 
 .owl-carousel .owl-video-play-icon:hover {
-  -ms-transform: scale(1.3, 1.3);
   transform: scale(1.3, 1.3);
 }
 
@@ -229,4 +236,4 @@
   z-index: 1;
   height: 100%;
   width: 100%;
-}
+}/*# sourceMappingURL=owl.carousel.css.map */
