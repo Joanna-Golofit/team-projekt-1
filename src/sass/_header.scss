@@ -3,6 +3,10 @@
 .header__btn {
   display: none;
 }
+.header__link:hover,
+.header__link:focus {
+  color:#ff6b09;
+}
 
 .header__btn-hamburger {
   background-color: transparent;

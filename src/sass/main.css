@@ -133,6 +133,11 @@ img {
   display: none;
 }
 
+.header__link:hover,
+.header__link:focus {
+  color: #ff6b09;
+}
+
 .header__btn-hamburger {
   background-color: transparent;
   border: none;
@@ -247,6 +252,7 @@ img {
   line-height: 15px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn--filled {
