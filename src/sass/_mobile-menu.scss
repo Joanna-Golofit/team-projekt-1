@@ -48,7 +48,8 @@
   margin-bottom: 50px;
 }
 
-.link--current {
+.menu-open__link:hover,
+.menu-open__link:focus {
   color: #ff6b09;
 }
 
