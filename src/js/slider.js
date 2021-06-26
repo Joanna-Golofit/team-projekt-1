@@ -1,6 +1,6 @@
 'use strict';
 
-// SLIDER
+// REVIEWS SLIDER
 (() => {
   $('.slides__list').owlCarousel({
     loop: true,
@@ -13,7 +13,7 @@
   });
 
   let btnMobile = [...document.querySelectorAll('.slides__button_mobile')];
-  let btnDesctop = [...document.querySelectorAll('.slides__button_desctop')];
+  let btnDesktop = [...document.querySelectorAll('.slides__button_desktop')];
   let owlDot = [...document.querySelectorAll('.owl-dot')];
 
   const moreInfo = e => {
@@ -21,9 +21,9 @@
     let moreText = target.previousSibling;
 
     if (moreText.classList.contains('slides__about_active')) {
-      target.innerHTML = 'Читать дальше';
+      target.innerHTML = 'Read more';
     } else {
-      target.innerHTML = 'Cвернуть';
+      target.innerHTML = 'Collapse';
     }
 
     moreText.classList.toggle('slides__about_active');
@@ -34,11 +34,11 @@
     let allTextTablet = document.querySelectorAll('.slides__about-tablet');
 
     btnMobile.forEach(e => {
-      e.innerHTML = 'Читать дальше';
+      e.innerHTML = 'Read more';
     });
 
-    btnDesctop.forEach(e => {
-      e.innerHTML = 'Читать дальше';
+    btnDesktop.forEach(e => {
+      e.innerHTML = 'Read more';
     });
 
     allText.forEach(e => {
@@ -54,7 +54,7 @@
     e.addEventListener('click', moreInfo);
   });
 
-  btnDesctop.forEach(e => {
+  btnDesktop.forEach(e => {
     e.addEventListener('click', moreInfo);
   });
 

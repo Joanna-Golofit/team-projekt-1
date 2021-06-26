@@ -12,6 +12,7 @@ body {
   position: relative;
 }
 
+
 .teacher-section__title {
   font-family: "MontserratEB", sans-serif;
   font-weight: 800;
@@ -209,7 +210,7 @@ body {
   top: 0;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../images/Campfire.svg");
+  background-image: url("../images/icon-campfire.svg");
   z-index: 2;
 }
 
@@ -248,6 +249,8 @@ body {
   padding: 0;
   list-style: none;
 }
+
+.slides__item {}
 
 .slides__content {
   padding: 22px 24px 34px;
