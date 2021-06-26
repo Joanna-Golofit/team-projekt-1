@@ -20,7 +20,7 @@
   // background-image: url('../images/hero-wave-desktop.jpg');
   background-image: url('../images/hero-wave-desktop-png.png');
   // /* contain nie daje takiego cienia */
-  background-size: contain;
+  // background-size: contain;
   // /* background-size: auto; */
   // /* cover jakos lepiej z cieniem wyglada */
   background-size: cover; 
@@ -75,19 +75,19 @@
 @media screen and (min-width: 1280px) {
   .header__container {
     padding-top: 40px;
-    padding-right: 191px;
-    padding-left: 181px;
+    // padding-right: 191px;
+    padding-left: 90px;
   }
   .hero__container {
     display: flex;
     // padding-top: 63px;   
     padding-top: 0; 
     // padding-right: 54px;
-    padding-left: 183.5px;
+    padding-left: 90px;
   }  
   .advantages__container {
   padding-bottom: 130px;
-  padding-left: 183.5px;
-  padding-right: 183px;
+  padding-left: 183px;
+  // padding-right: 183px;
   }
 }
