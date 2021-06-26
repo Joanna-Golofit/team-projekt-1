@@ -112,14 +112,14 @@ img {
 @media screen and (min-width: 1280px) {
   .header__container {
     padding-top: 40px;
-    padding-left: 90px;
+    padding-left: 80px;
   }
   .hero__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding-top: 0;
-    padding-left: 90px;
+    padding-left: 80px;
   }
   .advantages__container {
     padding-bottom: 130px;
@@ -285,11 +285,6 @@ img {
   .hero__wrapper {
     width: calc(100% / 2);
   }
-  .hero__img-wrapper {
-    -ms-flex-preferred-size: calc(100% / 2);
-        flex-basis: calc(100% / 2);
-    overflow: visible;
-  }
   .hero__img {
     width: 376px;
     height: 321px;
@@ -337,7 +332,7 @@ img {
   }
   .hero__img-wrapper {
     height: 718px;
-    padding-left: 116px;
+    padding-left: 80px;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
