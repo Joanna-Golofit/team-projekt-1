@@ -1497,10 +1497,14 @@ body {
     padding-bottom: 48px;
     letter-spacing: 1.7px;
   }
+  .container.teacher-section__container {
+    width: 1210px;
+  }
   .teacher-section__title {
     margin-bottom: 44px;
     font-size: 42px;
     letter-spacing: 1.7px;
+    text-align: center;
   }
   .teacher-section__img img {
     width: 494px;
@@ -1596,7 +1600,6 @@ body {
   }
   .slider {
     width: 1064px;
-    margin-left: 81px;
   }
   .slides__about-tablet {
     height: 120px;
