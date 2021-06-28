@@ -12,6 +12,10 @@ body {
   position: relative;
 }
 
+.container.teacher-section__container {
+  margin: 0 auto;
+  width: 280px;
+}
 
 .teacher-section__title {
   font-family: "MontserratEB", sans-serif;
@@ -164,6 +168,10 @@ body {
   background-color: #f1f1f1;
   padding-top: 22px;
   padding-bottom: 24px;
+}
+
+.guaranties__list.container {
+  width: 280px;
 }
 
 .guaranties__list {
@@ -371,6 +379,10 @@ body {
 @media (min-width: 768px) {
   .container {
     min-width: 688px;
+  }
+
+  .container.teacher-section__container {
+    width: 688px;
   }
 
   .teacher-section {
