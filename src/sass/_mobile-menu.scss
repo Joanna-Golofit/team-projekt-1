@@ -8,10 +8,11 @@
   padding-top: 30px;
   padding-right: 20px;
   padding-left: 20px;
-  position: absolute;
+  position: fixed;
   background-color: rgba(17, 21, 24, 0.9);
   width: 100%;
-  height: 100%;
+  // height: 100%;
+  height: 768px;
   left: 0;
   top: 0;
   transition: 500ms linear;
@@ -47,7 +48,8 @@
   margin-bottom: 50px;
 }
 
-.link--current {
+.menu-open__link:hover,
+.menu-open__link:focus {
   color: #ff6b09;
 }
 

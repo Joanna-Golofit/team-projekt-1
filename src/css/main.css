@@ -687,6 +687,7 @@ img {
   letter-spacing: 0.03em;
   color: #111518;
   text-align: center;
+  margin-top: 200px;
 }
 
 .description__title {
@@ -835,6 +836,7 @@ img {
     letter-spacing: 0.03em;
     color: #111518;
     text-align: center;
+    margin-top: 280px;
   }
 
   .description__list {
@@ -893,7 +895,7 @@ body {
 }
 
 .teacher-section {
-  margin-top: 238px;
+  margin-top: 330px;
   padding-bottom: 16px;
   position: relative;
 }
@@ -1088,7 +1090,7 @@ body {
   top: 0;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../images/Campfire.svg");
+  background-image: url("../images/icon-campfire.svg");
   z-index: 2;
 }
 
@@ -1459,7 +1461,7 @@ body {
   }
 
   .teacher-section {
-    margin-top: 81px;
+    margin-top: 400px;
     padding-bottom: 48px;
     letter-spacing: 1.7px;
   }

@@ -65,6 +65,7 @@
   line-height: 15px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn--filled {
@@ -107,11 +108,11 @@
     width: calc(100% / 2);
   } 
 
-  .hero__img-wrapper {
-    flex-basis: calc(100% / 2);
-    overflow: visible;
+  // .hero__img-wrapper {
+  //   // flex-basis: calc(100% / 2);
+  //   // overflow: visible;
 
-  }
+  // }
   .hero__img {
     width: 376px;
     height: 321px;    
@@ -165,7 +166,7 @@
   .hero__img-wrapper {    
     // position: relative;       
     height: 718px;
-    padding-left: 116px;
+    padding-left: 80px;
     flex-grow: 1;
     // overflow: hidden;
     // flex-basis: calc(100% / 2);
