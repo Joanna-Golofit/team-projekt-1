@@ -9,6 +9,10 @@
     color: #111518;
     text-align: center;
     margin-top: 200px;
+    margin-bottom: 50px;
+  }
+  .description__list {
+    margin-top: 30px;
   }
   .description__title {
     font-family: Montserrat;
@@ -92,7 +96,7 @@
       padding-left: 40px;
       padding-right: 40px;
       margin-left: -20px;
-      margin-top: -27px;
+      margin-top: 3px;
       transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
     }
     .description__title {
@@ -146,7 +150,7 @@
     }
     .description__list {
       margin-left: -20px;
-      margin-top: -20px;
+      margin-top: 30px;
     }
   
     .description__title {
