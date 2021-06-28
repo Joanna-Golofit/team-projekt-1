@@ -1766,7 +1766,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  padding-bottom: 0px;
+  padding-bottom: 537px;
 }
 
 .program__header {
@@ -1882,14 +1882,14 @@ body {
   width: 120px;
   height: 137px;
   position: absolute;
-  bottom: -97px;
+  bottom: 440px;
   right: 0;
   background-image: url("../images/program-mobile.png");
 }
 
 @media screen and (min-width: 768px) {
   .program__container {
-    padding-bottom: 130px;
+    padding-bottom: 392px;
   }
   .program__header {
     font-size: 26px;
@@ -1923,7 +1923,7 @@ body {
     width: 384px;
     height: 280px;
     position: absolute;
-    bottom: 0px;
+    bottom: 253px;
     right: 0;
     background-image: url("../images/program-tablet.png");
   }
@@ -1931,7 +1931,7 @@ body {
 
 @media screen and (min-width: 1280px) {
   .program__container {
-    padding-bottom: 130px;
+    padding-bottom: 363px;
   }
   .program__list {
     display: -webkit-box;
@@ -1996,7 +1996,7 @@ body {
             justify-content: flex-start;
   }
   .program__list--section-wrapper {
-    width: 270px;
+    width: 240px;
   }
   .program__list--wrapper {
     display: -webkit-box;
@@ -2033,10 +2033,10 @@ body {
     background-color: white;
   }
   .program__photo {
-    width: 672px;
+    width: calc(100% - 850px);
     height: 502px;
     position: absolute;
-    bottom: -160px;
+    bottom: 59px;
     left: 0;
     background-image: url("../images/program-desktop.png");
     background-repeat: no-repeat;
@@ -2044,34 +2044,28 @@ body {
 }
 
 /*   END PROGRAM   */
-.benefits__container {
-  background-color: #111518;
-  height: 437px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 27px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  position: relative;
-}
-
 .benefits__title {
+  position: absolute;
+  text-align: left;
   width: 180px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 130%;
   letter-spacing: 0.03em;
   color: #ffffff;
-}
-
-.benefits__title-decoration {
-  color: #ff6b09;
+  bottom: 437px;
 }
 
 .benefits__list-wrapper {
+  height: 638px;
   width: calc(100% - 40px);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2079,6 +2073,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
+  bottom: -231px;
   background-color: #ffffff;
   margin-top: 30px;
   -webkit-box-shadow: -5px 8px 26px 0px #0000000a;
@@ -2109,23 +2104,25 @@ body {
   color: #111518;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1280px) {
-  .benefits__container {
-    height: 340px;
-    padding-left: 40px;
-    padding-right: 40px;
+@media screen and (max-width: 768px) {
+  .benefits__title {
+    left: 20px;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
   .benefits__title {
     font-size: 26px;
     width: 500px;
+    bottom: 172px;
+    text-align: center;
   }
   .benefits__list-wrapper {
-    margin-top: 0px;
-    width: calc(100% - 80px);
-    top: -50px;
+    bottom: -252px;
     -webkit-transform: translate(0%, 50%);
             transform: translate(0%, 50%);
-    height: 303px;
+    width: calc(100% - 80px);
+    height: 403px;
   }
   .benefits__ordinal-number {
     font-size: 14px;
@@ -2151,24 +2148,14 @@ body {
 }
 
 @media screen and (min-width: 1280px) {
-  .benefits__container {
-    height: 180px;
-    padding-left: 184px;
-    padding-right: 184px;
-  }
   .benefits__list-wrapper {
     bottom: 0;
     -webkit-transform: translate(0%, 50%);
             transform: translate(0%, 50%);
     max-width: calc(100% - 368px);
-    height: 354px;
+    height: 398px;
   }
   .benefits__title {
-    font-weight: 800;
-    font-size: 46px;
-    line-height: 130%;
-    letter-spacing: 0.03em;
-    margin-top: 114px;
     display: none;
   }
   .benefits__list {
@@ -2186,6 +2173,7 @@ body {
   .benefits__item {
     -ms-flex-preferred-size: calc(100% / 3);
         flex-basis: calc(100% / 3);
+    width: 356px;
   }
   .benefits__descripton {
     padding-right: 40px;

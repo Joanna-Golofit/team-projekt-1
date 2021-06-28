@@ -6,7 +6,8 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    padding-bottom: 0px;
+    padding-bottom: 537px;
+    
   }
   .program__header{
     font-family: Montserrat;
@@ -105,7 +106,7 @@
       width: 120px;
       height: 137px;
       position: absolute;
-      bottom: -97px;
+      bottom: 440px;
       right: 0;
       
       background-image: url("../images/program-mobile.png");
@@ -115,7 +116,7 @@
     @media screen and (min-width: 768px) {
   
       .program__container{
-        padding-bottom: 130px;
+        padding-bottom: 392px;
       }
   
       .program__header{
@@ -145,7 +146,7 @@
         width: 384px;
         height: 280px;
         position: absolute;
-        bottom: 0px;
+        bottom: 253px;
         right: 0;
         
         background-image: url("../images/program-tablet.png");
@@ -156,7 +157,7 @@
     @media screen and (min-width: 1280px) {
       
       .program__container{
-        padding-bottom: 130px;
+        padding-bottom: 363px;
       }
       .program__list{
         display: flex;
@@ -217,7 +218,7 @@
         justify-content:flex-start;
       }
       .program__list--section-wrapper{
-        width: 270px;
+        width: 240px;    
       }
       .program__list--wrapper{
         display: flex;
@@ -254,12 +255,12 @@
     }
   
     .program__photo{
-      width: 672px;
+      width: calc(100% - 850px);
       height: 502px;
       position: absolute;
-      bottom: -160px;
+      bottom: 59px;
       left: 0;
-      
+
       background-image: url("../images/program-desktop.png");
       background-repeat: no-repeat;
     }
